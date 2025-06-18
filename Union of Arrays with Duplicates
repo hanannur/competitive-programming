@@ -1,0 +1,9 @@
+class Solution:    
+    def findUnion(self, a, b):
+        # code here
+        union_set=set(list(set(a).union(b)))
+        count=0
+        for i in union_set:
+            count+=1
+            
+        return count
