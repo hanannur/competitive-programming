@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+eng_sub=set(list(map(int,input().split())))
+b=int(input())
+french_sub=set(list(map(int,input().split())))
+set_union=eng_sub.union(french_sub)
+count=len(set_union)
+print(count)
