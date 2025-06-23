@@ -1,0 +1,23 @@
+n,m=map(int,input().split())
+
+str1=[]
+str2=[]
+for i in range(n):
+    str1.append(input())
+
+for i in range(m):
+    str2.append(input())
+
+for letter in str2:
+    collect=[]
+
+    for j in range(n):
+        if str1[j]==letter:
+            collect.append(str(j+1))
+    if collect:
+        print(' '.join(collect))   
+         
+    else:
+        print(-1)   
+            
+            
