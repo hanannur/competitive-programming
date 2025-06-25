@@ -6,6 +6,8 @@ class Solution:
                 if nums[i]+nums[j]==target:
                     index.append(i)
                     index.append(j)
+                    break
+                 
                     
             
         return index
