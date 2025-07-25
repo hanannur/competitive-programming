@@ -1,11 +1,10 @@
 class Solution:
     def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
-        pair=[]
+        sorted_names=[(names[i] ,heights[i]) for i in range(len(names))]
+        sortd_name = sorted(sorted_names , key=lambda x : x[1], reverse=True)
+        final=[]
         for i in range(len(names)):
-            pair.append((names[i],heights[i]))
-        sorted_lst = sorted(pair, key=lambda x : x[1],reverse=True)
-        final=[t[0] for t in sorted_lst]
+            final.append(sortd_name[i][0])
         return final
 
-
-
+        
