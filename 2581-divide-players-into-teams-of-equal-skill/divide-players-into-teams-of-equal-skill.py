@@ -1,8 +1,8 @@
 class Solution:
     def dividePlayers(self, skill: List[int]) -> int:
         sorted_lst=sorted(skill)
-        if len(skill)%2 !=0:
-            return -1
+        # if len(skill)%2 !=0:
+        #     return -1
         left=0
         right=len(skill)-1
         check=sorted_lst[left]+sorted_lst[right]
