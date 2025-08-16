@@ -3,6 +3,7 @@ class Solution:
         start=0
         sqrt_value = c ** 0.5
         end = int(sqrt_value)
+        #end=c//2
 
         while end>=start:
             if (start*start)+(end*end)==c:
